@@ -13,7 +13,11 @@ class School
   end
 
   def grade(grade_level)
-    @roster.detect 
+    @roster.detect do |grade, student|
+      if grade == grade_level
+        return student
+      end
+    end
   end
 
   def sort(student_name)

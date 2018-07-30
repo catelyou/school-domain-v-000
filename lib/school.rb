@@ -20,8 +20,8 @@ class School
     end
   end
 
-  def sort(student_name)
-
+  def sort
+    
   end
 
 end
